@@ -47,7 +47,7 @@
 		
 		viewer.setEDLEnabled(true);
 		viewer.setFOV(60);
-		viewer.setPointBudget(2_000_000);
+		viewer.setPointBudget(10_000_000);
 		document.title = "";
 		viewer.setEDLEnabled(false);
 		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
@@ -71,7 +71,7 @@
 			//material.activeAttributeName = "rgba"; //[rgba, intensity, classification, ...]
 			material.size = 1;
 			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
+			material.shape = Potree.PointShape.CIRLCLE;
 			viewer.fitToScreen();
 		});
 		
